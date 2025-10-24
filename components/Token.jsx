@@ -42,7 +42,7 @@ const Token = () => {
             <Box h2="Token name" h1="WESTIE" index={0} />
             <Box h2="Token symbol" h1="WESTIE" index={1} />
             <Box h2="Token supply" h1="100M" index={2} />
-            <Box h2="Token Tax" h1="4%" index={3} />
+            <Box h2="Token Tax" h1="3%" index={3} />
             <Box h2="Liquidity" h1="Locked" index={4} />
             <Box h2="Token chain" h1="bsc" index={5} />
           </motion.div>
@@ -54,10 +54,10 @@ const Token = () => {
             className="w-full bg-[#FBFBFB] rounded-xl p-1 md:p-4 flex justify-between items-center gap-2"
           >
             <h2 className="text-[12px] md:text-2xl lg:text-3xl xl:text-4xl">
-              0x169a4C38D203dd96b3f65cf5b7B73714B0C223d7
+              0xBB325ddE9b92e0E02b01272f761Ddf51D93FABd8
             </h2>
             <CopyToClipboard
-              text="0x169a4C38D203dd96b3f65cf5b7B73714B0C223d7"
+              text="0xBB325ddE9b92e0E02b01272f761Ddf51D93FABd8"
               onCopy={handleCopy}
             >
               <motion.button
