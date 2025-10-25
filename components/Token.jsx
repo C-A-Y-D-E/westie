@@ -41,7 +41,7 @@ const Token = () => {
           >
             <Box h2="Token name" h1="WESTIE" index={0} />
             <Box h2="Token symbol" h1="WESTIE" index={1} />
-            <Box h2="Token supply" h1="100M" index={2} />
+            <Box h2="Token supply" h1="1 Billion" index={2} />
             {/* <Box h2="Token Tax" h1="Tax (3% / 3%) Breakdown:
 1% — Auto Buyback & Burn
 2% — Marketing & Charity" index={3} /> */}
