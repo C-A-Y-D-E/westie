@@ -42,7 +42,47 @@ const Token = () => {
             <Box h2="Token name" h1="WESTIE" index={0} />
             <Box h2="Token symbol" h1="WESTIE" index={1} />
             <Box h2="Token supply" h1="100M" index={2} />
-            <Box h2="Token Tax" h1="3%" index={3} />
+            {/* <Box h2="Token Tax" h1="Tax (3% / 3%) Breakdown:
+1% — Auto Buyback & Burn
+2% — Marketing & Charity" index={3} /> */}
+
+<motion.div
+      initial={{ opacity: 0, scale: 0.8, y: 50 }}
+      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{
+        duration: 0.5,
+        delay: 3 * 0.1,
+        ease: "easeOut",
+      }}
+      whileHover={{
+        scale: 1.05,
+        boxShadow: "0 10px 30px rgba(0,0,0,0.1)",
+        transition: { duration: 0.2 },
+      }}
+      className="w-full h-full py-3 text-center space-y-3 bg-[#FBFBFB] rounded-xl"
+    >
+      <motion.h2
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: 3 * 0.1 + 0.2 }}
+        className="text-[#F0774E] font-extrabold text-xl md:text-2xl"
+      >
+       Token Tax (3% / 3%)
+      </motion.h2>
+      <motion.h1
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: 3 * 0.1 + 0.3 }}
+        className="font-bold  text-[#B1A6A6] text-2xl md:text-2xl lg:text-2xl xl:text-2xl uppercase"
+      >
+
+1% — Auto Buyback & Burn <br/>
+2% — Marketing & Charity <br/>
+      </motion.h1>
+    </motion.div>
             <Box h2="Liquidity" h1="Locked" index={4} />
             <Box h2="Token chain" h1="bsc" index={5} />
           </motion.div>
